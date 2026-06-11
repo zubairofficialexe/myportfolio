@@ -308,7 +308,7 @@ I also develop automation and monitoring scripts to track real-time server perfo
 
 
 
-```html
+
 <!-- RESUME -->
 
 <article class="resume" data-page="resume">
@@ -533,194 +533,228 @@ I also develop automation and monitoring scripts to track real-time server perfo
   </section>
 
 </article>
-```
 
+<!--
+  - #PORTFOLIO
+-->
 
+<article class="portfolio" data-page="portfolio">
 
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
 
+  <section class="projects">
 
-      <!--
-        - #PORTFOLIO
-      -->
+    <ul class="filter-list">
 
-      <article class="portfolio" data-page="portfolio">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+      <li class="filter-item">
+        <button data-filter-btn>AWS</button>
+      </li>
 
-        <section class="projects">
+      <li class="filter-item">
+        <button data-filter-btn>CI/CD</button>
+      </li>
 
-          <ul class="filter-list">
+      <li class="filter-item">
+        <button data-filter-btn>Linux</button>
+      </li>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+    </ul>
 
-            <li class="filter-item">
-              <button data-filter-btn>AWS</button>
-            </li>
+    <div class="filter-select-box">
 
-            <li class="filter-item">
-              <button data-filter-btn>CI/CD</button>
-            </li>
+      <button class="filter-select" data-select>
 
-            <li class="filter-item">
-              <button data-filter-btn>Linux</button>
-            </li>
+        <div class="select-value" data-selecct-value>
+          Select Category
+        </div>
 
-          </ul>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
 
-          <div class="filter-select-box">
+      </button>
 
-            <button class="filter-select" data-select>
+      <ul class="select-list">
 
-              <div class="select-value" data-selecct-value>Select category</div>
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+        <li class="select-item">
+          <button data-select-item>AWS</button>
+        </li>
 
-            </button>
+        <li class="select-item">
+          <button data-select-item>CI/CD</button>
+        </li>
 
-            <ul class="select-list">
+        <li class="select-item">
+          <button data-select-item>Linux</button>
+        </li>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
+      </ul>
 
-              <li class="select-item">
-                <button data-select-item>AWS</button>
-              </li>
+    </div>
 
-              <li class="select-item">
-                <button data-select-item>CI/CD</button>
-              </li>
+    <ul class="project-list">
 
-              <li class="select-item">
-                <button data-select-item>Linux</button>
-              </li>
+      <!-- AWS Infrastructure -->
 
-            </ul>
+      <li class="project-item active" data-filter-item data-category="aws">
 
-          </div>
+        <a href="./assets/images/img-2.png" class="portfolio-image">
 
-          <ul class="project-list">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
 
-            <li class="project-item  active" data-filter-item data-category="aws">
-              <a href="#">
+            <img src="./assets/images/img-2.png"
+                 alt="AWS Infrastructure"
+                 loading="lazy">
+          </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+          <h3 class="project-title">AWS Infrastructure</h3>
 
-                  <img src="./assets/images/img-2.png" alt="AWS" loading="lazy">
-                </figure>
+          <p class="project-category">AWS</p>
 
-                <h3 class="project-title">Infrastructure</h3>
+        </a>
 
-                <p class="project-category">AWS</p>
+      </li>
 
-              </a>
-            </li>
+      <!-- CI/CD Pipeline -->
 
-            <li class="project-item  active" data-filter-item data-category="ci/cd">
-              <a href="#">
+      <li class="project-item active" data-filter-item data-category="ci/cd">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+        <a href="./assets/images/img-1.png" class="portfolio-image">
 
-                  <img src="./assets/images/img-1.png" alt="orizon" loading="lazy">
-                </figure>
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
 
-                <h3 class="project-title">Pipeline</h3>
+            <img src="./assets/images/img-1.png"
+                 alt="CI/CD Pipeline"
+                 loading="lazy">
+          </figure>
 
-                <p class="project-category">CI/CD</p>
+          <h3 class="project-title">Jenkins Pipeline</h3>
 
-              </a>
-            </li>
+          <p class="project-category">CI/CD</p>
 
-            <li class="project-item  active" data-filter-item data-category="linux">
-              <a href="#">
+        </a>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+      </li>
 
-                  <img src="./assets/images/img-4.png" alt="fundo" loading="lazy">
-                </figure>
+      <!-- Linux -->
 
-                <h3 class="project-title">Linux CLI</h3>
+      <li class="project-item active" data-filter-item data-category="linux">
 
-                <p class="project-category">Linux</p>
+        <a href="./assets/images/img-4.png" class="portfolio-image">
 
-              </a>
-            </li>
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
 
-            <li class="project-item  active" data-filter-item data-category="aws">
-              <a href="#">
+            <img src="./assets/images/img-4.png"
+                 alt="Linux Administration"
+                 loading="lazy">
+          </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+          <h3 class="project-title">Linux CLI</h3>
 
-                  <img src="./assets/images/awsimg.webp" alt="brawlhalla" loading="lazy">
-                </figure>
+          <p class="project-category">Linux</p>
 
-                <h3 class="project-title">VPC Architecture</h3>
+        </a>
 
-                <p class="project-category">AWS</p>
+      </li>
 
-              </a>
-            </li>
+      <!-- AWS VPC -->
 
-            <li class="project-item  active" data-filter-item data-category="aws">
-              <a href="#">
+      <li class="project-item active" data-filter-item data-category="aws">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+        <a href="./assets/images/awsimg.webp" class="portfolio-image">
 
-                  <img src="./assets/images/vpcpeering.webp" alt="dsm." loading="lazy">
-                </figure>
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
 
-                <h3 class="project-title">VPC Peering</h3>
+            <img src="./assets/images/awsimg.webp"
+                 alt="AWS VPC Architecture"
+                 loading="lazy">
+          </figure>
 
-                <p class="project-category">AWS</p>
+          <h3 class="project-title">VPC Architecture</h3>
 
-              </a>
-            </li>
+          <p class="project-category">AWS</p>
 
-            <li class="project-item  active" data-filter-item data-category="ci/cd">
-              <a href="#">
+        </a>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+      </li>
 
-                  <img src="./assets/images/cicdpip.jpg" alt="metaspark" loading="lazy">
-                </figure>
+      <!-- VPC Peering -->
 
-                <h3 class="project-title">CI/CD Pipeline</h3>
+      <li class="project-item active" data-filter-item data-category="aws">
 
-                <p class="project-category">CI/CD</p>
+        <a href="./assets/images/vpcpeering.webp" class="portfolio-image">
 
-              </a>
-            </li>
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
 
-            
-          </ul>
+            <img src="./assets/images/vpcpeering.webp"
+                 alt="VPC Peering"
+                 loading="lazy">
+          </figure>
 
-        </section>
+          <h3 class="project-title">VPC Peering</h3>
 
-      </article>
+          <p class="project-category">AWS</p>
+
+        </a>
+
+      </li>
+
+      <!-- CI/CD Deployment -->
+
+      <li class="project-item active" data-filter-item data-category="ci/cd">
+
+        <a href="./assets/images/cicdpip.jpg" class="portfolio-image">
+
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+
+            <img src="./assets/images/cicdpip.jpg"
+                 alt="CI/CD Deployment"
+                 loading="lazy">
+          </figure>
+
+          <h3 class="project-title">CI/CD Deployment</h3>
+
+          <p class="project-category">CI/CD</p>
+
+        </a>
+
+      </li>
+
+    </ul>
+
+  </section>
+
+</article>
+
+
 
 
 
@@ -769,8 +803,16 @@ I also develop automation and monitoring scripts to track real-time server perfo
 
 
 
+<!--
+  - Fullscreen Image Preview Modal
+  - Opens portfolio images in a popup overlay
+  - Click × button, outside area, or press ESC to close
+-->
 
-
+  <div id="imageModal" class="image-modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
   <!--
     - custom js link
   -->
@@ -782,6 +824,10 @@ I also develop automation and monitoring scripts to track real-time server perfo
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <div id="imageModal" class="image-modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
 </body>
 
 </html>

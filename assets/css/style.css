@@ -1025,9 +1025,36 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+}
 
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 85%;
+  max-height: 85%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
 
-
+.close-modal {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  line-height: 1;
+  padding: 5px 15px;
+}
 
 
 /*-----------------------------------*\
@@ -1221,7 +1248,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+.contact-whatsapp {
+  margin-bottom: 20px;
+}
 
+.contact-whatsapp .form-btn {
+  text-decoration: none;
+  width: 100%;
+}
 
 
 

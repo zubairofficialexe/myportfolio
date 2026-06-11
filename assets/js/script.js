@@ -101,3 +101,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// portfolio item filter and modal variables
+const portfolioImages = document.querySelectorAll(".portfolio-image");
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.querySelector(".close-modal");
+
+portfolioImages.forEach(item => {
+
+  item.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    modalImage.src = this.getAttribute("href");
+
+    imageModal.style.display = "block";
+
+  });
+
+});
+
+closeModal.addEventListener("click", () => {
+  imageModal.style.display = "none";
+});
+
+imageModal.addEventListener("click", function (e) {
+  if (e.target === imageModal) {
+    imageModal.style.display = "none";
+  }
+});
